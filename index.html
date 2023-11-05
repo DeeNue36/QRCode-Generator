@@ -7,10 +7,22 @@
 
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
+        <p>Enter text or URL</p>
+        <input type="text" id="qr-text" placeholder="Input your text or URL....">
         
+        <!-- The div element for displaying the generated QR code -->
+        <div id="qrcode">
+            <img src="" id="qr-image">
+        </div>
+
+        <button onclick="generateQRCode()">
+            Generate QR Code
+        </button>
     </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
